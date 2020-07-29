@@ -10,10 +10,10 @@ html {
 .body {
   max-width: 1000px;
   margin: 0 auto;
-  font-family: 'Catamaran', sans-serif;
 }
 
 #root {
+  font-family: 'Catamaran', sans-serif;
   display: block;
   min-height: 100vh;
   background-image: url("converter-background.jpg");
