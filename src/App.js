@@ -1,17 +1,20 @@
 import React from 'react';
-import Container from "./Container";
-import Footer from "./Footer";
-import Form from "./Form";
 import Header from "./Header";
-import Result from "./Result";
+import Container from "./Container";
+import Form from "./Container/Form";
+import Paragraph from "./Container/Paragraph";
+import Result from "./Container/Result";
+import Footer from "./Footer";
 
 function App() {
   return (
     <>
       <Header title="Kalkulator Walutowy" />
-      <Form />
-      <Container />
-      <Result />
+      <Container>
+        <Form />
+        <Paragraph />
+        <Result />
+      </Container>
       <Footer />
     </>
   );
