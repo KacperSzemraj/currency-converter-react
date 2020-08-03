@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 const Form = () => (
-    <form className="form">
+    <form>
         <fieldset className="form__fieldset">
             <legend className="form__legend">Uzupełnij dane</legend>
             <p>
