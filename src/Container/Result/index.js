@@ -3,7 +3,7 @@ import "./style.css";
 
 const Result = ({ result }) => (
     <div className="result__textBox">
-        <span className="resultText">
+        <span className="result__text">
             {result !== undefined && (
                 <>
                     <span className="result__sourceAmount">
