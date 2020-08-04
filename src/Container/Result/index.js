@@ -6,9 +6,13 @@ const Result = ({ result }) => (
         <span className="resultText">
             {result !== undefined && (
                 <>
-                    {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;
+                    <span className="result__sourceAmount">
+                        {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;
+                    </span>
                     to w przeliczeniu&nbsp;
-                    {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                    <span className="result__targetAmount">
+                        {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+                    </span>
                 </>
             )}
         </span>

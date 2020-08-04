@@ -16,3 +16,17 @@
     font-weight: 500;
     letter-spacing: 1px;
 }
+
+.result__sourceAmount {
+    color: hsl(120, 100%, 25%);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.result__targetAmount {
+    color: green;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
