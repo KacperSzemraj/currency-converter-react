@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 const Result = ({ result }) => (
-    <div className="resultTextBox">
+    <div className="result__textBox">
         <span className="resultText">
             {result !== undefined && (
                 <>
