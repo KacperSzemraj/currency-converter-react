@@ -26,11 +26,11 @@ const Clock = () => {
 
 
     return (
-        <p className="form__clock">
+        <div className="form__clock">
             Dzisiaj jest
             {" "}
             {formatDate(date)}
-        </p>
+        </div>
     )
 };
 
