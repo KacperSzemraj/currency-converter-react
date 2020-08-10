@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import "./style.css";
 
-const dateTemplate = {
+const formatDate = (date) => date.toLocaleString(undefined, {
     weekday: "long",
     day: "numeric",
     month: "long",
     hour: "numeric",
     minute: "numeric",
     second: "numeric",
-};
+});
 
 const Clock = () => {
     const [date, setDate] = useState(new Date());
@@ -26,8 +26,12 @@ const Clock = () => {
 
 
     return (
-        <p className="form__clock"> Dzisiaj jest {date.toLocaleDateString(undefined, dateTemplate)}</p>
+        <p className="form__clock">
+            Dzisiaj jest
+            {" "}
+            {formatDate(date)}
+        </p>
     )
-}
+};
 
 export default Clock;
