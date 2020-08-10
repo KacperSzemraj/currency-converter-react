@@ -11,12 +11,12 @@ const dateTemplate = {
 };
 
 const Clock = () => {
-    const [currentTime, setCurrentTime] = useState(new Date());
+    const [date, setDate] = useState(new Date());
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             const newDate = new Date();
-            setCurrentTime(newDate);
+            setDate(newDate);
         }, 1000);
 
         return () => {
@@ -26,7 +26,7 @@ const Clock = () => {
 
 
     return (
-        <p className="form__clock"> Dzisiaj jest {currentTime.toLocaleDateString(undefined, dateTemplate)}</p>
+        <p className="form__clock"> Dzisiaj jest {date.toLocaleDateString(undefined, dateTemplate)}</p>
     )
 }
 
