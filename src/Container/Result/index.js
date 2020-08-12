@@ -1,22 +1,22 @@
 import React from "react";
-import "./style.css";
+import { TextBox, ResultText, SourceAmount, TargetAmount } from "./styled";
 
 const Result = ({ result }) => (
-    <div className="result__textBox">
-        <span className="result__text">
+    <TextBox>
+        <ResultText>
             {result !== undefined && (
                 <>
-                    <span className="result__sourceAmount">
+                    <SourceAmount>
                         {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;
-                    </span>
+                    </SourceAmount>
                     to w przeliczeniu&nbsp;
-                    <span className="result__targetAmount">
+                    <TargetAmount>
                         {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
-                    </span>
+                    </TargetAmount>
                 </>
             )}
-        </span>
-    </div>
+        </ResultText>
+    </TextBox>
 );
 
 export default Result;
