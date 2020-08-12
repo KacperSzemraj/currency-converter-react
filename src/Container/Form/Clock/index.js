@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ClockWrapper } from "./styled";
+import { useCurrentDate } from "./useCurrentDate";
 
 const formatDate = (date) => date.toLocaleString(undefined, {
     weekday: "long",
@@ -11,19 +12,7 @@ const formatDate = (date) => date.toLocaleString(undefined, {
 });
 
 const Clock = () => {
-    const [date, setDate] = useState(new Date());
-
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            const newDate = new Date();
-            setDate(newDate);
-        }, 1000);
-
-        return () => {
-            clearInterval(intervalId);
-        }
-    }, []);
-
+    const date = useCurrentDate();
 
     return (
         <ClockWrapper>
