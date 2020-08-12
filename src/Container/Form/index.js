@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { currencies } from "../../currencies";
 import Clock from './Clock';
-import "./style.css";
+import { Fieldset, Legend, LabelText, Input, Select, Button } from "./styled";
 
 const Form = ({ calculateResult }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
@@ -14,19 +14,18 @@ const Form = ({ calculateResult }) => {
 
     return (
         <form onSubmit={onSubmit}>
-            <fieldset className="form__fieldset">
-                <legend className="form__legend">Uzupełnij dane</legend>
+            <Fieldset>
+                <Legend>Uzupełnij dane</Legend>
                 <Clock />
                 <p>
                     <label>
-                        <span className="form__labelText">
+                        <LabelText>
                             Kwota w zł*:
-                        </span>
-                        <input
+                        </LabelText>
+                        <Input
                             value={amount}
                             onChange={({ target }) => setAmount(target.value)}
                             placeholder="Podaj kwotę w zł"
-                            className="form__field"
                             type="number"
                             required
                             step="0.01"
@@ -35,11 +34,10 @@ const Form = ({ calculateResult }) => {
                 </p>
                 <p>
                     <label>
-                        <span className="form__labelText">
+                        <LabelText>
                             Waluta:
-                        </span>
-                        <select
-                            className="form__field"
+                        </LabelText>
+                        <Select
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}
                         >
@@ -51,11 +49,11 @@ const Form = ({ calculateResult }) => {
                                     {currency.name}
                                 </option>
                             )))}
-                        </select>
+                        </Select>
                     </label>
                 </p>
-                <button className="form__button">Przelicz</button>
-            </fieldset>
+                <Button>Przelicz</Button>
+            </Fieldset>
         </form>
     );
 };
