@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import { StyledFooter } from "./styled";
 
 const Footer = () => (
-    <footer className="footer">
+    <StyledFooter>
         © 2020 Kacper Szemraj
-    </footer>
+    </StyledFooter>
 );
 
 export default Footer;
