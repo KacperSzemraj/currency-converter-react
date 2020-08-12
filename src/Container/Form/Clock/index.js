@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./style.css";
+import { ClockWrapper } from "./styled";
 
 const formatDate = (date) => date.toLocaleString(undefined, {
     weekday: "long",
@@ -26,11 +26,11 @@ const Clock = () => {
 
 
     return (
-        <div className="form__clock">
+        <ClockWrapper>
             Dzisiaj jest
             {" "}
             {formatDate(date)}
-        </div>
+        </ClockWrapper>
     )
 };
 
