@@ -7,4 +7,8 @@ export const StyledFooter = styled.footer`
     right: 0;
     padding: 20px;
     text-align: center;
+
+    @media (max-width: 767px) {
+        position: unset;
+    }
 `;
