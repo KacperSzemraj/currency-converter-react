@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import background from "./converter-background.jpg";
 
 export const GlobalStyle = createGlobalStyle`
     html {
@@ -19,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Catamaran', sans-serif;
         display: block;
         min-height: 100vh;
-        background-image: url("converter-background.jpg");
+        background-image: url("${background}");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
