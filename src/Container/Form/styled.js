@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const Fieldset = styled.fieldset`
     padding: 20px;
-    border: 1px solid #222222;
+    border: 1px solid ${({ theme }) => theme.color.mineShaft};
     border-radius: 4px;
-    box-shadow: 1px 1px #222222;
+    box-shadow: 1px 1px ${({ theme }) => theme.color.mineShaft};
 `;
 
 export const Legend = styled.legend`
-    background-color: hsl(120, 100%, 90%);
+    background-color: ${({ theme }) => theme.color.snowyMint};
     padding: 10px;
-    border: 1px solid #222222;
+    border: 1px solid ${({ theme }) => theme.color.mineShaft};
     border-radius: 4px;
     font-size: 14px;
     font-weight: 600;
@@ -33,14 +33,14 @@ export const Input = styled.input`
     width: 100%;
     max-width: 300px;
     padding: 10px;
-    border: 1px solid #222222;
+    border: 1px solid ${({ theme }) => theme.color.mineShaft};
     border-radius: 4px;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
 
     &:required {
-        background-color: hsl(0, 100%, 95%);
+        background-color: ${({ theme }) => theme.color.pippin};
     }
 `;
 
@@ -48,7 +48,7 @@ export const Select = styled.select`
     width: 100%;
     max-width: 300px;
     padding: 10px;
-    border: 1px solid #222222;
+    border: 1px solid ${({ theme }) => theme.color.mineShaft};
     border-radius: 4px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -62,14 +62,14 @@ export const Button = styled.button`
     padding: 10px;
     border: 1px solid;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white};
     cursor: pointer;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
 
     &:hover {
-        background-color: hsl(120, 100%, 90%);
+        background-color: ${({ theme }) => theme.color.snowyMint};
     }
 
     &:active {
