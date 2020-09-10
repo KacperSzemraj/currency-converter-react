@@ -73,6 +73,6 @@ export const Button = styled.button`
     }
 
     &:active {
-        background-color: hsl(120, 100%, 80%);
+        filter: brightness(105%);
     }
 `;
