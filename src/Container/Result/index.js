@@ -7,9 +7,9 @@ const Result = ({ result }) => (
             <ResultText>
                 <SourceAmount>
                     {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;
-                    </SourceAmount>
-                    to w przeliczeniu&nbsp;
-                    <TargetAmount>
+                </SourceAmount>
+                    to&nbsp;w&nbsp;przeliczeniu
+                <TargetAmount>
                     {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
                 </TargetAmount>
             </ResultText>
