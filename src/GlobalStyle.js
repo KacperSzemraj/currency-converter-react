@@ -18,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
 
     #root {
         font-family: 'Catamaran', sans-serif;
-        
         min-height: 100vh;
         background-image: url("${background}");
         background-size: cover;
