@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
         display: block;
         min-height: 100vh;
         background-image: url("${background}");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
